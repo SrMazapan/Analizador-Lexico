@@ -159,7 +159,7 @@ public class Scanner {
                     }
                     break;
 
-                    case 20:
+                case 20:
                     if(Character.isDigit(c)){
                         estado = 20;
                         lexema += c;
@@ -168,7 +168,7 @@ public class Scanner {
                         TipoToken tt = palabrasReservadas.get(lexema);
 
                         if(tt == null){
-                            Token t = new Token(TipoToken.IDENTIFIER, lexema);
+                            Token t = new Token(TipoToken.DOUBLE, lexema);
                             tokens.add(t);
                         }
                         else{
@@ -182,6 +182,7 @@ public class Scanner {
 
                     }
                     break;
+                ca
             }
 
 
